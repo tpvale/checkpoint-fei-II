@@ -4,4 +4,4 @@ Participantes: Roberto Castro, Schelen Grossel e Tiago Pereira
 
 ## Wireframe
 
-[wireframe-checkpoint-II.pdf](https://github.com/tpvale/checkpoint-fei-II/files/7599228/wireframe-checkpoint-II.pdf)
+![wireframe-checkpoint-II](https://user-images.githubusercontent.com/45038737/143326935-16f2301a-2fe0-421a-953a-a9f2816dcb3c.jpg)
