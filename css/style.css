@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f243a;
+  color: #fff;
+}
+
+header,
+footer {
+  border: 2px solid yellow;
+}
+
+.container {
+  /* margin: 0 auto; */
+  margin: 120px auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 2px solid yellow;
+
+  grid-template-areas: "titulo titulo titulo";
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+
+  grid-template-areas:
+    "titulo titulo"
+    "nome nome"
+    "email email"
+    "telefone celular"    
+    "data data"
+    "idade idade"
+    "condicao condicao"
+    "botao botao";
+}
+
+.titulo {
+  grid-area: titulo;
+  text-align: center;
+  border: 2px solid yellow;
+}
+
+.nome {
+  grid-area: nome;
+  border: 1px solid yellow;
+}
+
+.email {
+  grid-area: email;
+  border: 1px solid yellow;
+}
+.telefone {
+  grid-area: telefone;
+  border: 1px solid yellow;
+}
+
+.celular {
+  grid-area: celular;
+  border: 1px solid yellow;
+}
+
+.data {
+  grid-area: data;
+  background-color: blue;
+}
+
+.idade {
+  grid-area: idade;
+  border: 1px solid yellow;
+}
+
+.condicao {
+  grid-area: condicao;
+  border: 1px solid yellow;
+}
+
+.botao {
+  grid-area: botao;
+  border: 1px solid yellow;
+}
+
+/* .formulario{
+    display: flex;    
+    width: 800px;
+    height: 90px;
+    flex-direction: column;
+} */
