@@ -9,9 +9,7 @@
   </head>
   <body>
     <header>
-      <div>
-        <p>Home</p>
-      </div>
+      <h2>Home</h2>      
     </header>
     <main>
       <div class="container">
@@ -41,15 +39,17 @@
               name="telefone"
               id="telefone"
               placeholder="Insira telefone"
-            /></div>
-            <div class="celular">
+            />
+          </div>
+          <div class="celular">
               <label for="Celular"> Celular </label>
               <input
                 type="text"
                 name="celular"
                 id="celular"
                 placeholder="Insira telefone"
-              /></div>
+              />
+            </div>
             <div class="data">
               <label for="data">Data de nascimento:</label>
               <input
@@ -64,33 +64,37 @@
             <div class="idade">
               <label for="Idade">É maior de idade (+18 anos)?</label>
               <input type="radio" name="idade" value="maior" id="maior" />Sim
-              <input type="radio" name="idade" value="menor" id="menor" />Não
-              <!-- <input type="radio" name="idade" id="maior">Sim </label>
-                     <input type="radio" name="idade" id="menor">Não </label> -->
+              <input type="radio" name="idade" value="menor" id="menor" />Não              
             </div>
+
             <div class="condicao">
-              <label for="Idade">Pontos de interesse na cidade:</label>
+              <h3 for="condicoes">Pontos de interesse na cidade:</h3>
+              
               <input type="checkbox" name="condicoes1" id="condicoes1" />
               <label for="condicoes1">Mirante </label>
+
               <input type="checkbox" name="condicoes2" id="condicoes2" />
               <label for="condicoes2">Cachoeiras </label>
+
               <input type="checkbox" name="condicoes3" id="condicoes3" />
               <label for="condicoes3">Parque </label>
+
               <input type="checkbox" name="condicoes4" id="condicoes4" />
               <label for="condicoes4">Restaurantes/Bar </label>
+
               <input type="checkbox" name="condicoes5" id="condicoes5" />
               <label for="condicoes5">Bosque </label>
+
               <input type="checkbox" name="condicoes6" id="condicoes6" />
-              <label for="condicoes6">Outras atrações </label>
+              <label for="condicoes6">Outras atrações </label>              
             </div>
           </div>
-
+          <div class="botao">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar formulário</button>
+          </div>
         </form>
-    </div>
-    <div class="botao">
-      <button type="submit">Enviar</button>
-      <button type="reset">Limpar formulário</button>
-    </div>
+      </div>
     </main>
 
     <footer id="rodape">
