@@ -1,8 +1,6 @@
 /* ========== CONFIGURAÇÕES GERAIS: ========== */
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
-=======
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
 
 * {
   margin: 0;
@@ -13,10 +11,8 @@
 body {
   background-color: #2f243a;
   color: #fff;
-<<<<<<< HEAD
   font-family: "Montserrat", sans-serif;
-=======
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
+  font-family: "Montserrat", sans-serif;
 }
 
 /* ========== HEADER: ==========*/
@@ -47,9 +43,6 @@ header > h2 {
 
   grid-template-areas: "titulo titulo titulo";
 }
-
-<<<<<<< HEAD
-=======
 /* ========== FORMULARIO: ==========*/
 
 .formulario {
@@ -67,8 +60,6 @@ header > h2 {
     "condicao condicao"
     "botao botao";
 }
-
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
 /* ========== Cabeçalho: ==========*/
 
 .titulo {
@@ -83,7 +74,6 @@ header > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
   flex-direction: column;
 }
 
@@ -126,7 +116,10 @@ header > h2 {
   font-family: "Roboto";
 }
 
-form input[type="text"]:focus {
+form input[type="text"]:focus,
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus {
   background-color: #24222c;
   border: 3px solid #bebbbb;
   color: #fff;
@@ -212,7 +205,6 @@ input {
 .celular {
   width: 50%;
 }
-
 /* ========== Input interesses: ==========*/
 .condicao {
   height: 350px;
@@ -252,7 +244,6 @@ input {
 footer a img {
   width: 40px;
   margin: 0 10px;
-=======
 }
 
 /* ========== Input nome: ==========*/
@@ -431,5 +422,4 @@ footer a img {
 
 .botao {
   grid-area: botao;
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
 }

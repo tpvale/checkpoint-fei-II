@@ -5,55 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-<<<<<<< HEAD
     <title>CheckPoint II - Front I</title>
   </head>
   <body>
     <header>
       <h2>Home</h2>
-=======
     <title>CheckPointII</title>
   </head>
   <body>
     <header>
-      <h2>Home</h2>      
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
+      <h2>Home</h2>
     </header>
     <main>
       <div class="container">
         <form action="cadastro" class="formulario">
           <!-- <fieldset form="cadastro-usuario">  -->
           <div class="titulo">
-<<<<<<< HEAD
             <h1>CheckPoint II - Frontend I</h1>
             <h3>
               Equipe: Roberto Castro | Schelen Grossel | Tiago Vale [Turma 05]
             </h3>
           </div>
           <div class="nome formItem">
-=======
             <h1>Título</h1>
           </div>
           <div class="nome">
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
+            <label for="nome">Nome:</label>
+            <input>
             <label for="nome">Nome:</label>
             <input
+              required
               type="text"
               name="nome"
               id="nome"
               placeholder="Insira o nome"
             />
           </div>
-
-<<<<<<< HEAD
           <div class="email formItem">
             <label for="email">Email:</label>
             <input
               type="email"
               name="email"
               id="email"
-              placeholder="Insira seu email"
-            />
+              required/>
           </div>
 
           <div class="telefones">
@@ -64,12 +58,16 @@
                 name="telefone_comercial"
                 id="telefone_comercial"
                 placeholder="Insira telefone"
+                required
+                type="text"
+                name="telefone_comercial"
+                id="telefone_comercial"
+                placeholder="(00) 0000-0000"
               />
             </div>
 
             <div class="celular formItem">
               <label for="celular"> Celular </label>
-=======
           <div class="email">
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" />
@@ -85,7 +83,6 @@
           </div>
           <div class="celular">
               <label for="Celular"> Celular </label>
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
               <input
                 type="text"
                 name="celular"
@@ -93,7 +90,15 @@
                 placeholder="Insira telefone"
               />
             </div>
-<<<<<<< HEAD
+              <input
+                required
+                type="text"
+                name="celular"
+                id="celular"
+                placeholder="(00) 00000-0000"
+              />
+
+            </div>
           </div>
 
           <div class="data formItem">
@@ -103,8 +108,11 @@
               name="data"
               id="data"
               min="1970-01-01"
-              value="1990-12-31"
-            />
+              required
+              type="date"
+              name="data"
+              id="data"
+              max="2020-01-01"/>
           </div>
 
           <div class="idade formItem formItemRadio">
@@ -180,8 +188,6 @@
               >
             </div>
           </div>
-
-=======
             <div class="data">
               <label for="data">Data de nascimento:</label>
               <input
@@ -221,7 +227,6 @@
               <label for="condicoes6">Outras atrações </label>              
             </div>
           </div>
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
           <div class="botao">
             <button type="submit">Enviar</button>
             <button type="reset">Limpar formulário</button>
@@ -232,18 +237,33 @@
 
     <footer id="rodape">
       <a href="https://www.instagram.com/" target="_blank">
-<<<<<<< HEAD
         <img src="./image/instaIcon.png" class="icones" />
       </a>
       <a href="https://www.youtube.com/" target="_blank">
         <img src="./image/youtubeIcon.png" class="icones" />
-=======
         <img src="image/instagram.png" class="icones" />
       </a>
       <a href="https://www.youtube.com/" target="_blank">
         <img src="image/youtube.png" class="icones" />
->>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
       </a>
     </footer>
+      </a>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="jquery.mask.js"></script>
+
+    <script>
+      $("#celular").keypress(function() {
+        $(this).mask('(00)00000-0000');
+
+      });
+      $("#telefone_comercial").keypress(function() {
+        $(this).mask('(00)0000-0000');
+
+      });
+    </script>
+
+>>>>>>> tiago_vale
   </body>
 </html>
