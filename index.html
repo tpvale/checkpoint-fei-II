@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CheckPoint II - Front I</title>
+  </head>
+  <body>
+    <header>
+      <h2>Home</h2>
+    </header>
+    <main>
+      <div class="container">
+        <form action="cadastro" class="formulario">
+          <!-- <fieldset form="cadastro-usuario">  -->
+          <div class="titulo">
+            <h1>CheckPoint II - Frontend I</h1>
+            <h3>
+              Equipe: Roberto Castro | Schelen Grossel | Tiago Vale [Turma 05]
+            </h3>
+          </div>
+          <div class="nome formItem">
+            <label for="nome">Nome:</label>
+            <input
+              required
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Insira o nome"
+            />
+          </div>
+
+          <div class="email formItem">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Insira seu email"
+            />
+          </div>
+
+          <div class="telefones">
+            <div class="telefone formItem">
+              <label for="telefone_comercial">Telefone Comercial</label>
+              <input
+                required
+                type="text"
+                name="telefone_comercial"
+                id="telefone_comercial"
+                placeholder="(00) 0000-0000"
+              />
+            </div>
+
+            <div class="celular formItem">
+              <label for="celular"> Celular </label>
+              <input
+                required
+                type="text"
+                name="celular"
+                id="celular"
+                placeholder="(00) 00000-0000"
+              />
+
+            </div>
+          </div>
+
+          <div class="data formItem">
+            <label for="data">Data de nascimento:</label>
+            <input
+              required
+              type="date"
+              name="data"
+              id="data"
+              max="2020-01-01"
+              value="1990-12-31"
+            />
+          </div>
+
+          <div class="idade formItem formItemRadio">
+            <p>É maior de idade (+18 anos)?</p>
+            <div class="itensRadio">
+              <input type="radio" name="idade" value="maior" id="maior" />
+              <label for="idade">Sim</label>
+            </div>
+            <div class="itensRadio">
+              <input type="radio" name="idade" value="maior" id="maior" />
+              <label for="idade">Não</label>
+            </div>
+          </div>
+
+          <div class="formItemNova">
+            <h3>Pontos de Interesses na Cidade:</h3>
+            <div>
+              <input
+                class="intensRadioCheck"
+                type="checkbox"
+                name="condicoes1"
+                id="condicoes1"
+              />
+              <label class="itensRadioCheck" for="condicoes1">Mirante</label>
+            </div>
+            <div>
+              <input
+                class="intensRadioCheck"
+                type="checkbox"
+                name="condicoes2"
+                id="condicoes2"
+              />
+              <label class="itensRadioCheck" for="condicoes2">Cachoeiras</label>
+            </div>
+            <div>
+              <input
+                class="intensRadioCheck"
+                type="checkbox"
+                name="condicoes3"
+                id="condicoes3"
+              />
+              <label class="itensRadioCheck" for="condicoes3">Parque</label>
+            </div>
+            <div>
+              <input
+                class="intensRadioCheck"
+                type="checkbox"
+                name="condicoes4"
+                id="condicoes4"
+              />
+              <label class="itensRadioCheck" for="condicoes4"
+                >Restaurantes/Bar</label
+              >
+            </div>
+            <div>
+              <input
+                class="intensRadioCheck"
+                type="checkbox"
+                name="condicoes5"
+                id="condicoes5"
+              />
+              <label class="itensRadioCheck" for="condicoes5">Bosque</label>
+            </div>
+            <div>
+              <input
+                class="intensRadioCheck"
+                type="checkbox"
+                name="condicoes6"
+                id="condicoes6"
+              />
+              <label class="itensRadioCheck" for="condicoes6"
+                >Outras atrações</label
+              >
+            </div>
+          </div>
+
+          <div class="botao">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar formulário</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer id="rodape">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="./image/instaIcon.png" class="icones" />
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="./image/youtubeIcon.png" class="icones" />
+      </a>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="jquery.mask.js"></script>
+
+    <script>
+      $("#celular").keypress(function() {
+        $(this).mask('(00)00000-0000');
+
+      });
+      $("#telefone_comercial").keypress(function() {
+        $(this).mask('(00)0000-0000');
+
+      });
+    </script>
+
+  </body>
+</html>
