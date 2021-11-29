@@ -1,5 +1,8 @@
 /* ========== CONFIGURAÇÕES GERAIS: ========== */
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+=======
+>>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
 
 * {
   margin: 0;
@@ -10,7 +13,10 @@
 body {
   background-color: #2f243a;
   color: #fff;
+<<<<<<< HEAD
   font-family: "Montserrat", sans-serif;
+=======
+>>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
 }
 
 /* ========== HEADER: ==========*/
@@ -42,6 +48,27 @@ header > h2 {
   grid-template-areas: "titulo titulo titulo";
 }
 
+<<<<<<< HEAD
+=======
+/* ========== FORMULARIO: ==========*/
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+
+  grid-template-areas:
+    "titulo titulo"
+    "nome nome"
+    "email email"
+    "telefone celular"
+    "data data"
+    "idade idade"
+    "condicao condicao"
+    "botao botao";
+}
+
+>>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
 /* ========== Cabeçalho: ==========*/
 
 .titulo {
@@ -56,6 +83,7 @@ header > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
   flex-direction: column;
 }
 
@@ -224,4 +252,184 @@ input {
 footer a img {
   width: 40px;
   margin: 0 10px;
+=======
+}
+
+/* ========== Input nome: ==========*/
+
+.nome {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.nome > input {
+  width: 440px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.nome {
+  grid-area: nome;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input email: ==========*/
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.email > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.email > input {
+  width: 440px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.email {
+  grid-area: email;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input telefone: ==========*/
+
+.telefone {
+  display: flex;
+  flex-direction: column;
+}
+
+.telefone > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.telefone > input {
+  width: 240px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.telefone {
+  grid-area: email;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+.telefone {
+  grid-area: telefone;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input celular: ==========*/
+
+.celular {
+  display: flex;
+  flex-direction: column;
+}
+
+.celular > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.celular > input {
+  width: 240px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.celular {
+  grid-area: celular;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin: 0 0 10px 15px;
+}
+
+/* ========== Input data nascimento: ==========*/
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.data > input {
+  width: 240px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.data {
+  grid-area: data;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input idade: ==========*/
+
+.idade {
+  grid-area: idade;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input interesses: ==========*/
+
+.condicao {
+  grid-area: condicao;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+.condicao {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+}
+
+.botao {
+  grid-area: botao;
+>>>>>>> 0de41e62529937062832ae4aa9c6efc83bdebe86
 }
