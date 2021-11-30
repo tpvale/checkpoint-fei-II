@@ -116,15 +116,27 @@ header > h2 {
   font-family: "Roboto";
 }
 
+.formItem input[type="text"]:hover,
+.formItem input[type="email"]:hover {
+  width: 52%;
+  height: 30px;
+  transition: 1s ease;
+}
+
 form input[type="text"]:focus,
-form input[type="text"]:focus,
-form input[type="email"]:focus,
+form input[type="email"]:focus, 
 form input[type="date"]:focus {
   background-color: #24222c;
   border: 3px solid #bebbbb;
   color: #fff;
   border-radius: 10px;
   font-family: "Roboto";
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  width: 52%;
+  height: 30px;
 }
 
 .data > input[type="date"] {
