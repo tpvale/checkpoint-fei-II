@@ -1,0 +1,435 @@
+/* ========== CONFIGURAÇÕES GERAIS: ========== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f243a;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ========== HEADER: ==========*/
+
+header,
+footer {
+  height: 100px;
+  background-color: #2d1e3b;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header > h2 {
+  margin: 0 auto;
+}
+
+/* ========== CONTAINER: ==========*/
+
+.container {
+  margin: 80px auto;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  grid-template-areas: "titulo titulo titulo";
+}
+/* ========== FORMULARIO: ==========*/
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+
+  grid-template-areas:
+    "titulo titulo"
+    "nome nome"
+    "email email"
+    "telefone celular"
+    "data data"
+    "idade idade"
+    "condicao condicao"
+    "botao botao";
+}
+/* ========== Cabeçalho: ==========*/
+
+.titulo {
+  grid-area: titulo;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ========== FORMULARIO: ==========*/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ========== Inputs: ==========*/
+
+.formItem {
+  background-color: #444054;
+  height: 115px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formItem input[type="text"],
+.formItem input[type="email"],
+.formItem input[type="date"] {
+  background-color: #444054;
+  border: 3px solid #bebbbb;
+  color: #fff;
+  /* border-radius: 10px; */
+  font-family: "Roboto";
+}
+
+.formItem input[type="text"]:hover,
+.formItem input[type="email"]:hover,
+.formItem input[type="date"]:hover {
+  background-color: #504b63;
+  border: 3px solid #bebbbb;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Roboto";
+}
+
+.formItem input[type="text"]:hover,
+.formItem input[type="email"]:hover {
+  width: 52%;
+  height: 30px;
+  transition: 1s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus, 
+form input[type="date"]:focus {
+  background-color: #24222c;
+  border: 3px solid #bebbbb;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Roboto";
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  width: 52%;
+  height: 30px;
+}
+
+.data > input[type="date"] {
+  width: 150px;
+}
+
+.formItemNova {
+  background-color: #444054;
+  width: 800px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.formItemNova input {
+  margin: 18px 0 5px 46px;
+}
+
+.formItemNova > h3 {
+  margin: 25px 0 0 46px;
+}
+
+.formItem label,
+input {
+  margin-left: 46px;
+}
+
+.formItem input {
+  margin-top: 10px;
+  width: 50%;
+  height: 28px;
+  border-radius: 8px;
+  border: none;
+}
+
+.formItemRadio {
+  height: 160px;
+}
+
+.formItemRadio p {
+  margin: 10px 0 0 46px;
+}
+
+.formItemRadio div {
+  width: 40%;
+}
+
+.formItemRadio input[type="radio"] {
+  width: 5%;
+}
+
+.itensRadio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.itensRadio input[type="radio"] {
+  width: 15px;
+}
+
+.itensRadio label {
+  margin-top: 12px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.telefones {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.telefone,
+.celular {
+  width: 50%;
+}
+/* ========== Input interesses: ==========*/
+.condicao {
+  height: 350px;
+}
+
+.botao button {
+  color: #2f243a;
+  background: #db8a74;
+  border-radius: 6px;
+  right: 30px;
+  bottom: 30px;
+  width: 180px;
+  height: 40px;
+  outline: none;
+  border: none;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.botao button:nth-child(2){
+  margin-left: 20px;
+}
+
+.botao button:hover {
+  background-color: rgb(228, 114, 80);
+  translate: 10px;
+}
+
+#rodape {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+footer a img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+/* ========== Input nome: ==========*/
+
+.nome {
+  display: flex;
+  flex-direction: column;
+}
+
+.nome > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.nome > input {
+  width: 440px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.nome {
+  grid-area: nome;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input email: ==========*/
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.email > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.email > input {
+  width: 440px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.email {
+  grid-area: email;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input telefone: ==========*/
+
+.telefone {
+  display: flex;
+  flex-direction: column;
+}
+
+.telefone > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.telefone > input {
+  width: 240px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.telefone {
+  grid-area: email;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+.telefone {
+  grid-area: telefone;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input celular: ==========*/
+
+.celular {
+  display: flex;
+  flex-direction: column;
+}
+
+.celular > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.celular > input {
+  width: 240px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.celular {
+  grid-area: celular;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin: 0 0 10px 15px;
+}
+
+/* ========== Input data nascimento: ==========*/
+
+.data {
+  display: flex;
+  flex-direction: column;
+}
+
+.data > label {
+  font-size: 24px;
+  margin: 10px 10px;
+}
+
+.data > input {
+  width: 240px;
+  height: 25px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: none;
+}
+
+.data {
+  grid-area: data;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input idade: ==========*/
+
+.idade {
+  grid-area: idade;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+/* ========== Input interesses: ==========*/
+
+.condicao {
+  grid-area: condicao;
+  height: 90px;
+  border-radius: 15px;
+  background-color: #444054;
+  margin-bottom: 15px;
+}
+
+.condicao {
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+}
+
+.botao {
+  grid-area: botao;
+}
